@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript CRUD - Szoftverleltár</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Web programozás-1 Előadás Házi feladat</h1>
+        <p class="subtitle">JavaScript CRUD - Szoftverek kezelése</p>
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html">Főoldal</a>
+        <a href="javascript.html" class="active">JavaScript CRUD</a>
+        <a href="react/react-crud/">React CRUD</a>
+        <a href="react/spa/">SPA</a>
+        <a href="fetchapi.html">Fetch API CRUD</a>
+        <a href="react/axios/">Axios CRUD</a>
+        <a href="oojs.html">OOJS</a>
+    </nav>
+
+    <main class="container">
+        <section class="page-intro card">
+            <h2>Szoftvernyilvántartás JavaScript segítségével</h2>
+            <p>
+                Ezen az oldalon a szoftverek nyilvántartása történik sima JavaScript használatával.
+                Az adatok ebben a részben tömbben vannak tárolva, szerveroldali adatbázis nélkül.
+            </p>
+        </section>
+
+        <section class="form-section card">
+            <h2>Szoftver hozzáadása / módosítása</h2>
+
+            <form id="softwareForm">
+                <input type="hidden" id="softwareId">
+
+                <div class="form-group">
+                    <label for="softwareName">Szoftver neve</label>
+                    <input type="text" id="softwareName" name="softwareName" placeholder="Pl. Google Chrome">
+                </div>
+
+                <div class="form-group">
+                    <label for="softwareCategory">Kategória</label>
+                    <input type="text" id="softwareCategory" name="softwareCategory" placeholder="Pl. böngészés">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Mentés</button>
+                    <button type="button" id="cancelEditBtn">Mégse</button>
+                </div>
+
+                <p id="formMessage" class="message"></p>
+            </form>
+        </section>
+
+        <section class="table-section card">
+            <div class="section-header">
+                <h2>Szoftverlista</h2>
+                <input type="text" id="searchInput" placeholder="Keresés név vagy kategória alapján...">
+            </div>
+
+            <div class="table-wrapper">
+                <table id="softwareTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Név</th>
+                            <th>Kategória</th>
+                            <th>Műveletek</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Ide kerülnek majd a JavaScript által generált sorok -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Készítette: Fodor Árpád - U4BKST | Név2 - XYZ987</p>
+    </footer>
+
+    <script src="js/javascript-crud.js"></script>
+</body>
+</html>
