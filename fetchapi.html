@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API CRUD - Telepítések</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Web programozás-1 Előadás Házi feladat</h1>
+        <p class="subtitle">Fetch API CRUD - Telepítések kezelése</p>
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html">Főoldal</a>
+        <a href="javascript.html">JavaScript CRUD</a>
+        <a href="react/react-crud/">React CRUD</a>
+        <a href="react/spa/">SPA</a>
+        <a href="fetchapi.html" class="active">Fetch API CRUD</a>
+        <a href="react/axios/">Axios CRUD</a>
+        <a href="oojs.html">OOJS</a>
+    </nav>
+
+    <main class="container">
+        <section class="page-intro card">
+            <h2>Telepítések kezelése Fetch API segítségével</h2>
+            <p>
+                Ebben a modulban a telepítési rekordokat szerveroldali adatbázisban tároljuk,
+                és JavaScript + Fetch API segítségével kezeljük újratöltés nélkül.
+            </p>
+        </section>
+
+        <section class="form-section card">
+            <h2>Telepítés hozzáadása / módosítása</h2>
+
+            <form id="installForm">
+                <input type="hidden" id="installId">
+
+                <div class="form-group">
+                    <label for="gepid">Gép azonosító</label>
+                    <input type="number" id="gepid" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="szoftverid">Szoftver azonosító</label>
+                    <input type="number" id="szoftverid" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="verzio">Verzió</label>
+                    <input type="text" id="verzio" placeholder="pl. ver16.04">
+                </div>
+
+                <div class="form-group">
+                    <label for="datum">Dátum</label>
+                    <input type="date" id="datum">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Mentés</button>
+                    <button type="button" id="cancelEditBtn">Mégse</button>
+                </div>
+
+                <p id="message" class="message"></p>
+            </form>
+        </section>
+
+        <section class="table-section card">
+            <h2>Telepítések listája</h2>
+
+            <div class="table-wrapper">
+                <table id="installTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Gép ID</th>
+                            <th>Szoftver ID</th>
+                            <th>Verzió</th>
+                            <th>Dátum</th>
+                            <th>Műveletek</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Készítette: Név1 - ABC123 | Név2 - XYZ987</p>
+    </footer>
+
+    <script src="js/fetchapi.js"></script>
+</body>
+</html>
