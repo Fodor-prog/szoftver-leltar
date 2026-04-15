@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS - Gépmegjelenítő</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .oojs-area {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .machine-card {
+            width: 220px;
+            background: white;
+            border: 2px solid #dcdcdc;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .machine-card h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .machine-card p {
+            margin: 6px 0;
+        }
+
+        .desktop {
+            border-left: 8px solid #3498db;
+        }
+
+        .notebook {
+            border-left: 8px solid #2ecc71;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Web programozás-1 Előadás Házi feladat</h1>
+        <p class="subtitle">OOJS - Gépmegjelenítő alkalmazás</p>
+    </header>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html">Főoldal</a>
+            <a href="javascript.html">JavaScript CRUD</a>
+            <a href="react/react-crud/">React CRUD</a>
+            <a href="react/spa/">SPA</a>
+            <a href="fetchapi.html">Fetch API CRUD</a>
+            <a href="react/axios/">Axios CRUD</a>
+            <a href="oojs.html" class="active">OOJS</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="card">
+            <h2>Objektumorientált JavaScript alkalmazás</h2>
+            <p>
+                Ez az oldal objektumorientált JavaScript segítségével jelenít meg gépeket.
+                Külön osztály kezeli az alap gépadatokat, és külön leszármazott osztályok
+                az asztali gépekhez és notebookokhoz.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Megjelenített gépek</h2>
+            <div id="machineContainer" class="oojs-area"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Készítette: Fodor Árpád - U4BKST | Farkas Tamás - PLPJEB</p>
+    </footer>
+
+    <script src="js/oojs.js"></script>
+</body>
+</html>
