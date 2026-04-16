@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6e6e6;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Fejléc */
+.site-header {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.site-header h1 {
+  margin: 0 0 6px 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Menü */
+.main-nav {
+  background-color: #34495e;
+  text-align: center;
+  padding: 12px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.main-nav a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 16px;
+  margin: 4px 6px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background-color: #1abc9c;
+}
+
+/* Fő tartalom */
+.container {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+/* Kártyák / szekciók */
+.card,
+.page-intro,
+.form-section,
+.table-section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.page-intro h2,
+.form-section h2,
+.table-section h2,
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #2c3e50;
+  font-size: 26px;
+}
+
+.page-intro p,
+.card p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Űrlap */
+form {
+  margin: 0;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 11px 12px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #333;
+  background-color: #ffffff;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #1abc9c;
+  box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.12);
+}
+
+/* Gombok */
+button,
+input[type="submit"],
+input[type="button"] {
+  font-family: inherit;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #1abc9c;
+}
+
+button:disabled,
+input[type="submit"]:disabled,
+input[type="button"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Műveleti gombsor */
+.form-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.form-actions button {
+  min-width: 120px;
+}
+
+/* Üzenet */
+.message {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* Táblázat fejléc blokk */
+.section-header,
+.react-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.section-header h2,
+.react-section-header h2 {
+  margin: 0;
+}
+
+/* Keresőmező */
+.section-header input[type="text"],
+.react-section-header input[type="text"] {
+  width: 320px;
+  max-width: 100%;
+}
+
+/* Táblázat */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+thead tr {
+  background-color: #f1f1f1;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #dddddd;
+  vertical-align: middle;
+}
+
+th {
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Műveletek cella */
+.actions-cell {
+  white-space: nowrap;
+}
+
+.actions-cell .small-btn {
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+
+.small-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.delete-btn {
+  background-color: #c0392b;
+}
+
+.delete-btn:hover {
+  background-color: #a93226;
+}
+
+/* Lábléc */
+.site-footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+  margin-top: 28px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* Reszponzív */
+@media (max-width: 768px) {
+  .site-header h1 {
+    font-size: 26px;
+  }
+
+  .page-intro h2,
+  .form-section h2,
+  .table-section h2,
+  .card h2 {
+    font-size: 22px;
+  }
+
+  .section-header,
+  .react-section-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .section-header input[type="text"],
+  .react-section-header input[type="text"] {
+    width: 100%;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+
+  .actions-cell {
+    white-space: normal;
+  }
+}
