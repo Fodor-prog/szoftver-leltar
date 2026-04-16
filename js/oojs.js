@@ -11,6 +11,7 @@ class Gep {
     }
 
     renderCard() {
+        
         const card = document.createElement("div");
         card.className = "machine-card";
 
