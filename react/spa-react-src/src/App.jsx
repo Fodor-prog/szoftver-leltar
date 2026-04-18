@@ -342,7 +342,7 @@ function Calculator() {
 function Footer() {
   return (
     <footer className="site-footer">
-      <p>Készítette: Fodor Árpád - U4BKST</p>
+      <p>Készítette: Fodor Árpád - U4BKST |  Farkas Tamás - PLPJEB</p>
     </footer>
   );
 }

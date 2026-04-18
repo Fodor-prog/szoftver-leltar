@@ -287,7 +287,7 @@ function App() {
       </main>
 
       <footer className="site-footer">
-        <p>Készítette: Fodor Árpád - U4BKST</p>
+        <p>Készítette: Fodor Árpád - U4BKST |  Farkas Tamás - PLPJEB</p>
       </footer>
     </>
   );
