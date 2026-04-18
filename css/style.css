@@ -39,6 +39,8 @@ body {
     padding: 10px 0;
 }
 
+
+
 .main-nav a {
     color: white;
     padding: 15px 20px; 
@@ -46,6 +48,10 @@ body {
     font-weight: 500;
     border-radius: 6px;
     transition: 0.3;
+
+    background-color: #34495e;   /* ugyanaz mint React-ben */
+    text-align: center;
+    padding: 12px 10px;
 }
 
 
