@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_BASE = "https://szoftverleltar.nhely.hu/php/";
+const API_BASE = "/php/";
 
 const emptyForm = {
   id: "",
